@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1386" height="746" viewBox="0 0 1040 560">
+<rect width="1040" height="560" fill="#101827"/>
+<style>text{font-family:system-ui,-apple-system,sans-serif;fill:#e5edf7}.muted{fill:#9aabc0;font-size:12px}.title{font-size:21px;font-weight:700}.panel{font-size:15px;font-weight:650}.legend{font-size:12px}</style>
+<text x="34" y="38" class="title">All-zero outcomes</text>
+<text x="193.0" y="76" text-anchor="middle" class="panel">2 layers</text>
+<line x1="88" y1="396.0" x2="316" y2="396.0" stroke="#344257" stroke-width="1"/>
+<text x="80" y="400.0" text-anchor="end" class="muted">0%</text>
+<line x1="88" y1="321.0" x2="316" y2="321.0" stroke="#344257" stroke-width="1"/>
+<text x="80" y="325.0" text-anchor="end" class="muted">25%</text>
+<line x1="88" y1="246.0" x2="316" y2="246.0" stroke="#344257" stroke-width="1"/>
+<text x="80" y="250.0" text-anchor="end" class="muted">50%</text>
+<line x1="88" y1="171.0" x2="316" y2="171.0" stroke="#344257" stroke-width="1"/>
+<text x="80" y="175.0" text-anchor="end" class="muted">75%</text>
+<line x1="88" y1="96.0" x2="316" y2="96.0" stroke="#344257" stroke-width="1"/>
+<text x="80" y="100.0" text-anchor="end" class="muted">100%</text>
+<text x="88.0" y="418" text-anchor="middle" class="muted">2</text>
+<text x="164.0" y="418" text-anchor="middle" class="muted">4</text>
+<text x="240.0" y="418" text-anchor="middle" class="muted">6</text>
+<text x="316.0" y="418" text-anchor="middle" class="muted">8</text>
+<polyline points="88.0,96.0 164.0,96.0 240.0,96.0 316.0,96.0" fill="none" stroke="#dce6f1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="88.0" cy="96.0" r="4" fill="#dce6f1"/>
+<circle cx="164.0" cy="96.0" r="4" fill="#dce6f1"/>
+<circle cx="240.0" cy="96.0" r="4" fill="#dce6f1"/>
+<circle cx="316.0" cy="96.0" r="4" fill="#dce6f1"/>
+<polyline points="88.0,115.4 164.0,147.3 240.0,170.8 316.0,196.5" fill="none" stroke="#4ea5d9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="88.0" cy="115.4" r="4" fill="#4ea5d9"/>
+<circle cx="164.0" cy="147.3" r="4" fill="#4ea5d9"/>
+<circle cx="240.0" cy="170.8" r="4" fill="#4ea5d9"/>
+<circle cx="316.0" cy="196.5" r="4" fill="#4ea5d9"/>
+<polyline points="88.0,122.4 164.0,154.3 240.0,184.7 316.0,215.9" fill="none" stroke="#f4a261" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="88.0" cy="122.4" r="4" fill="#f4a261"/>
+<circle cx="164.0" cy="154.3" r="4" fill="#f4a261"/>
+<circle cx="240.0" cy="184.7" r="4" fill="#f4a261"/>
+<circle cx="316.0" cy="215.9" r="4" fill="#f4a261"/>
+<polyline points="88.0,108.8 164.0,118.2 240.0,130.7 316.0,140.9" fill="none" stroke="#8ecf72" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="88.0" cy="108.8" r="4" fill="#8ecf72"/>
+<circle cx="164.0" cy="118.2" r="4" fill="#8ecf72"/>
+<circle cx="240.0" cy="130.7" r="4" fill="#8ecf72"/>
+<circle cx="316.0" cy="140.9" r="4" fill="#8ecf72"/>
+<polyline points="88.0,185.1 164.0,292.6 240.0,328.0" fill="none" stroke="#e76f8a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="88.0" cy="185.1" r="4" fill="#e76f8a"/>
+<circle cx="164.0" cy="292.6" r="4" fill="#e76f8a"/>
+<circle cx="240.0" cy="328.0" r="4" fill="#e76f8a"/>
+<polyline points="88.0,124.0 164.0,152.7 240.0,181.8" fill="none" stroke="#b69cff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="88.0" cy="124.0" r="4" fill="#b69cff"/>
+<circle cx="164.0" cy="152.7" r="4" fill="#b69cff"/>
+<circle cx="240.0" cy="181.8" r="4" fill="#b69cff"/>
+<text x="518.0" y="76" text-anchor="middle" class="panel">4 layers</text>
+<line x1="413" y1="396.0" x2="641" y2="396.0" stroke="#344257" stroke-width="1"/>
+<line x1="413" y1="321.0" x2="641" y2="321.0" stroke="#344257" stroke-width="1"/>
+<line x1="413" y1="246.0" x2="641" y2="246.0" stroke="#344257" stroke-width="1"/>
+<line x1="413" y1="171.0" x2="641" y2="171.0" stroke="#344257" stroke-width="1"/>
+<line x1="413" y1="96.0" x2="641" y2="96.0" stroke="#344257" stroke-width="1"/>
+<text x="413.0" y="418" text-anchor="middle" class="muted">2</text>
+<text x="489.0" y="418" text-anchor="middle" class="muted">4</text>
+<text x="565.0" y="418" text-anchor="middle" class="muted">6</text>
+<text x="641.0" y="418" text-anchor="middle" class="muted">8</text>
+<polyline points="413.0,96.0 489.0,96.0 565.0,96.0 641.0,96.0" fill="none" stroke="#dce6f1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="413.0" cy="96.0" r="4" fill="#dce6f1"/>
+<circle cx="489.0" cy="96.0" r="4" fill="#dce6f1"/>
+<circle cx="565.0" cy="96.0" r="4" fill="#dce6f1"/>
+<circle cx="641.0" cy="96.0" r="4" fill="#dce6f1"/>
+<polyline points="413.0,132.9 489.0,189.0 565.0,235.9 641.0,264.4" fill="none" stroke="#4ea5d9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="413.0" cy="132.9" r="4" fill="#4ea5d9"/>
+<circle cx="489.0" cy="189.0" r="4" fill="#4ea5d9"/>
+<circle cx="565.0" cy="235.9" r="4" fill="#4ea5d9"/>
+<circle cx="641.0" cy="264.4" r="4" fill="#4ea5d9"/>
+<polyline points="413.0,147.1 489.0,186.4 565.0,248.4 641.0,282.2" fill="none" stroke="#f4a261" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="413.0" cy="147.1" r="4" fill="#f4a261"/>
+<circle cx="489.0" cy="186.4" r="4" fill="#f4a261"/>
+<circle cx="565.0" cy="248.4" r="4" fill="#f4a261"/>
+<circle cx="641.0" cy="282.2" r="4" fill="#f4a261"/>
+<polyline points="413.0,108.0 489.0,119.6 565.0,131.0 641.0,137.5" fill="none" stroke="#8ecf72" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="413.0" cy="108.0" r="4" fill="#8ecf72"/>
+<circle cx="489.0" cy="119.6" r="4" fill="#8ecf72"/>
+<circle cx="565.0" cy="131.0" r="4" fill="#8ecf72"/>
+<circle cx="641.0" cy="137.5" r="4" fill="#8ecf72"/>
+<polyline points="413.0,187.2 489.0,305.4 565.0,338.5" fill="none" stroke="#e76f8a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="413.0" cy="187.2" r="4" fill="#e76f8a"/>
+<circle cx="489.0" cy="305.4" r="4" fill="#e76f8a"/>
+<circle cx="565.0" cy="338.5" r="4" fill="#e76f8a"/>
+<polyline points="413.0,127.1 489.0,175.1 565.0,218.6" fill="none" stroke="#b69cff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="413.0" cy="127.1" r="4" fill="#b69cff"/>
+<circle cx="489.0" cy="175.1" r="4" fill="#b69cff"/>
+<circle cx="565.0" cy="218.6" r="4" fill="#b69cff"/>
+<text x="843.0" y="76" text-anchor="middle" class="panel">8 layers</text>
+<line x1="738" y1="396.0" x2="966" y2="396.0" stroke="#344257" stroke-width="1"/>
+<line x1="738" y1="321.0" x2="966" y2="321.0" stroke="#344257" stroke-width="1"/>
+<line x1="738" y1="246.0" x2="966" y2="246.0" stroke="#344257" stroke-width="1"/>
+<line x1="738" y1="171.0" x2="966" y2="171.0" stroke="#344257" stroke-width="1"/>
+<line x1="738" y1="96.0" x2="966" y2="96.0" stroke="#344257" stroke-width="1"/>
+<text x="738.0" y="418" text-anchor="middle" class="muted">2</text>
+<text x="814.0" y="418" text-anchor="middle" class="muted">4</text>
+<text x="890.0" y="418" text-anchor="middle" class="muted">6</text>
+<text x="966.0" y="418" text-anchor="middle" class="muted">8</text>
+<polyline points="738.0,96.0 814.0,96.0 890.0,96.0 966.0,96.0" fill="none" stroke="#dce6f1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="738.0" cy="96.0" r="4" fill="#dce6f1"/>
+<circle cx="814.0" cy="96.0" r="4" fill="#dce6f1"/>
+<circle cx="890.0" cy="96.0" r="4" fill="#dce6f1"/>
+<circle cx="966.0" cy="96.0" r="4" fill="#dce6f1"/>
+<polyline points="738.0,166.2 814.0,251.3 890.0,309.5 966.0,345.1" fill="none" stroke="#4ea5d9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="738.0" cy="166.2" r="4" fill="#4ea5d9"/>
+<circle cx="814.0" cy="251.3" r="4" fill="#4ea5d9"/>
+<circle cx="890.0" cy="309.5" r="4" fill="#4ea5d9"/>
+<circle cx="966.0" cy="345.1" r="4" fill="#4ea5d9"/>
+<polyline points="738.0,187.2 814.0,254.9 890.0,319.7 966.0,356.9" fill="none" stroke="#f4a261" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="738.0" cy="187.2" r="4" fill="#f4a261"/>
+<circle cx="814.0" cy="254.9" r="4" fill="#f4a261"/>
+<circle cx="890.0" cy="319.7" r="4" fill="#f4a261"/>
+<circle cx="966.0" cy="356.9" r="4" fill="#f4a261"/>
+<polyline points="738.0,107.1 814.0,119.7 890.0,129.1 966.0,141.9" fill="none" stroke="#8ecf72" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="738.0" cy="107.1" r="4" fill="#8ecf72"/>
+<circle cx="814.0" cy="119.7" r="4" fill="#8ecf72"/>
+<circle cx="890.0" cy="129.1" r="4" fill="#8ecf72"/>
+<circle cx="966.0" cy="141.9" r="4" fill="#8ecf72"/>
+<polyline points="738.0,194.0 814.0,325.2 890.0,362.5" fill="none" stroke="#e76f8a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="738.0" cy="194.0" r="4" fill="#e76f8a"/>
+<circle cx="814.0" cy="325.2" r="4" fill="#e76f8a"/>
+<circle cx="890.0" cy="362.5" r="4" fill="#e76f8a"/>
+<polyline points="738.0,139.5 814.0,217.8 890.0,282.9" fill="none" stroke="#b69cff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="738.0" cy="139.5" r="4" fill="#b69cff"/>
+<circle cx="814.0" cy="217.8" r="4" fill="#b69cff"/>
+<circle cx="890.0" cy="282.9" r="4" fill="#b69cff"/>
+<line x1="100" y1="461" x2="124" y2="461" stroke="#dce6f1" stroke-width="3"/>
+<text x="132" y="465" class="legend">Ideal</text>
+<line x1="380" y1="461" x2="404" y2="461" stroke="#4ea5d9" stroke-width="3"/>
+<text x="412" y="465" class="legend">Depolarizing</text>
+<line x1="660" y1="461" x2="684" y2="461" stroke="#f4a261" stroke-width="3"/>
+<text x="692" y="465" class="legend">Amplitude damping</text>
+<line x1="100" y1="495" x2="124" y2="495" stroke="#8ecf72" stroke-width="3"/>
+<text x="132" y="499" class="legend">Readout flip</text>
+<line x1="380" y1="495" x2="404" y2="495" stroke="#e76f8a" stroke-width="3"/>
+<text x="412" y="499" class="legend">Fake Lagos</text>
+<line x1="660" y1="495" x2="684" y2="495" stroke="#b69cff" stroke-width="3"/>
+<text x="692" y="499" class="legend">Fake Nairobi</text>
+<text x="520" y="424" text-anchor="middle" class="muted">Qubits</text>
+</svg>

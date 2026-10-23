@@ -1,0 +1,105 @@
+{
+  "source": "local Qiskit Aer simulation and packaged fake-backend snapshots; no hardware runs",
+  "observable": "Z on logical qubit 0",
+  "qubits": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "layers": [
+    2,
+    4,
+    8
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "shots": 1024,
+  "split_seed": 20261019,
+  "split_seeds": {
+    "train": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19
+    ],
+    "validation": [
+      3,
+      6
+    ],
+    "test": [
+      10,
+      18
+    ]
+  },
+  "simulator_seed": 42,
+  "noise_parameters": {
+    "depolarizing": {
+      "low": {
+        "single_gate": 0.002,
+        "cx": 0.012
+      },
+      "high": {
+        "single_gate": 0.008,
+        "cx": 0.048
+      }
+    },
+    "amplitude_damping": {
+      "low": {
+        "single_gate": 0.003,
+        "cx_per_qubit": 0.015
+      },
+      "high": {
+        "single_gate": 0.015,
+        "cx_per_qubit": 0.06
+      }
+    },
+    "readout_flip": {
+      "low": 0.01,
+      "high": 0.04
+    }
+  },
+  "versions": {
+    "qiskit": "2.5.2",
+    "qiskit-aer": "0.17.2",
+    "qiskit-ibm-runtime": "0.50.0"
+  },
+  "dataset_sha256": "7a630e75b53a040894cbb584779327799e04ae0e0104c88178e50ffe3181247c",
+  "snapshot_times": {
+    "fake_lagos": "2024-05-27T15:51:15-03:00",
+    "fake_nairobi": "2024-05-27T15:45:40-03:00"
+  },
+  "snapshot_calibrations_sha256": "b030ea770b8f1789ae471ec7cb95e88d5b6c4f02a5664213db810724124a9411"
+}
