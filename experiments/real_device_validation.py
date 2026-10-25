@@ -1,16 +1,20 @@
-"""Run a small, deliberately limited set of the test-seed circuits on real IBM
-Quantum hardware and compare against the exact Statevector ground truth.
+"""Run the full fixed test-seed circuit set on real IBM Quantum hardware and
+compare against the exact Statevector ground truth.
 
-Scope is intentionally small (2-qubit circuits only, from the fixed test seeds
-in data/manifest.json) to stay well inside a trial-account's queue/usage
-budget. This does not feed the training data -- it is a separate, explicitly
-labeled real-hardware check, per data/README.md's "Пізніше: дані реального
-пристрою" protocol (only test seeds, full run provenance recorded).
+Scope: every (qubits, layers, seed) combination already used as the held-out
+test split of data/synthetic_expectations.csv (seeds 10 and 18, from
+data/manifest.json split_seeds.test) -- 24 circuits total, directly
+comparable to the simulated test-set evaluation already in
+notebooks/eda_baseline_models.ipynb. This does not feed the training data --
+it is a separate, explicitly labeled real-hardware check, per
+data/README.md's "Пізніше: дані реального пристрою" protocol (test seeds
+only, full run provenance recorded).
 
 Usage:
-    uv run experiments/real_device_validation.py
+    uv run experiments/real_device_validation.py --backend ibm_fez
 """
 
+import argparse
 import csv
 import json
 import sys
@@ -25,19 +29,23 @@ from collect_data import make_circuit  # noqa: E402
 
 
 OUTPUT = Path(__file__).resolve().parents[1] / "results" / "real_device"
-QUBITS = 2
+QUBITS = (2, 4, 6, 8)
 LAYERS = (2, 4, 8)
 TEST_SEEDS = (10, 18)  # from data/manifest.json split_seeds.test
 SHOTS = 1024
-BACKEND_NAME = "ibm_fez"
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--backend", default="ibm_fez")
+    args = parser.parse_args()
+    backend_name = args.backend
+
     service = QiskitRuntimeService()
-    backend = service.backend(BACKEND_NAME)
+    backend = service.backend(backend_name)
     properties = backend.properties()
 
-    specs = [(QUBITS, layers, seed) for layers in LAYERS for seed in TEST_SEEDS]
+    specs = [(qubits, layers, seed) for qubits in QUBITS for layers in LAYERS for seed in TEST_SEEDS]
 
     circuits, idealvals, features_list = [], [], []
     for qubits, layers, seed in specs:
@@ -50,7 +58,7 @@ def main():
         idealvals.append(ideal)
         features_list.append(features)
 
-    print(f"Prepared {len(circuits)} circuits (qubits={QUBITS}) for backend {BACKEND_NAME}.")
+    print(f"Prepared {len(circuits)} circuits (qubits={list(QUBITS)}) for backend {backend_name}.")
     print(f"Backend status: {backend.status()}")
 
     pm = generate_preset_pass_manager(backend=backend, optimization_level=1)
@@ -75,7 +83,7 @@ def main():
             "circuit_id": f"q{qubits}_l{layers}_s{seed:02d}",
             "qubits": qubits, "layers": layers, "seed": seed,
             **features_list[index],
-            "backend": BACKEND_NAME,
+            "backend": backend_name,
             "backend_version": properties.backend_version if properties else None,
             "calibration_time": properties.last_update_date.isoformat() if properties else None,
             "job_id": job.job_id(),
@@ -86,22 +94,23 @@ def main():
             "delta": ideal - noisy,
         })
 
-    csv_path = OUTPUT / "real_device_test_results.csv"
+    csv_path = OUTPUT / f"real_device_test_results_{backend_name}.csv"
     with csv_path.open("w", newline="") as file:
         writer = csv.DictWriter(file, fieldnames=rows[0].keys(), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
+    manifest_path = OUTPUT / f"manifest_{backend_name}.json"
     manifest = {
-        "backend": BACKEND_NAME,
+        "backend": backend_name,
         "job_id": job.job_id(),
-        "qubits": QUBITS,
+        "qubits": list(QUBITS),
         "layers": list(LAYERS),
         "test_seeds": list(TEST_SEEDS),
         "shots": SHOTS,
         "n_circuits": len(rows),
     }
-    with (OUTPUT / "manifest.json").open("w") as file:
+    with manifest_path.open("w") as file:
         json.dump(manifest, file, indent=2)
 
     print(f"\nSaved {len(rows)} real-device rows to {csv_path}")

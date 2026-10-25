@@ -1,0 +1,21 @@
+{
+  "backend": "ibm_kingston",
+  "job_id": "dbevlp7pc3tc739mge20",
+  "qubits": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "layers": [
+    2,
+    4,
+    8
+  ],
+  "test_seeds": [
+    10,
+    18
+  ],
+  "shots": 1024,
+  "n_circuits": 24
+}
