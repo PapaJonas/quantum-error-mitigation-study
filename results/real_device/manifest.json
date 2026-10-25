@@ -1,0 +1,16 @@
+{
+  "backend": "ibm_fez",
+  "job_id": "dbevg9fpc3tc739mg6o0",
+  "qubits": 2,
+  "layers": [
+    2,
+    4,
+    8
+  ],
+  "test_seeds": [
+    10,
+    18
+  ],
+  "shots": 1024,
+  "n_circuits": 6
+}
