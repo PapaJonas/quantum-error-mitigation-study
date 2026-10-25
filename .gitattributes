@@ -1,0 +1,5 @@
+data/raw/*.csv filter=lfs diff=lfs merge=lfs -text
+
+# Normalize line endings for everything else so edits on Windows/macOS
+# don't produce whole-file CRLF/LF diffs.
+* text=auto eol=lf
